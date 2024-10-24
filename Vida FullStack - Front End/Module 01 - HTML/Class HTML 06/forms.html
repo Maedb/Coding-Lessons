@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Freelancer Finder</h1>
+    <h2>Customer Info</h2>
+    <form>
+        <label for="name">Name:
+            <input type="text" id="name" required placeholder="Name Surname" />
+        </label>
+
+        <br>
+
+        <label for="email">Email:
+            <input type="email" id="email" required placeholder="example@email.com" />
+        </label>
+
+        <br>
+
+        <label for="phone">Phone:
+            <input type="text" id="phone" placeholder="0000-0000" /> <br>
+        </label>
+
+        <br>
+        <h2>Job Info</h2>
+        <h3>Desired Budget</h3>
+        <label>
+            <input type="radio" name="price" value="50"> $50 <br>
+        </label>
+        <label>
+            <input type="radio" name="price" value="150"> $150 <br>
+        </label>
+        <label>
+            <input type="radio" name="price" value="300"> $300 <br>
+        </label>
+        <label>
+            <input type="radio" name="price" value="450"> $450 <br>
+        </label>
+        <label>
+            <input type="radio" name="price" value="600"> $600 <br>
+        </label>
+
+        <br>
+        <h3>Desired Services</h3>
+        <label>
+            <input type="checkbox" name="sevices" value="Photo"> Photography <br>
+        </label>
+        <label>
+            <input type="checkbox" name="sevices" value="Film"> Filming <br>
+        </label>
+        <label>
+            <input type="checkbox" name="sevices" value="Voice"> Commentary <br>
+        </label>
+        <label>
+            <input type="checkbox" name="sevices" value="Script"> Scripting <br>
+        </label>
+        <label>
+            <input type="checkbox" name="sevices" value="Edit"> Editing <br>
+        </label>
+        <label>
+            <input type="checkbox" name="sevices" value="Review"> Reviewing <br>
+        </label>
+
+        <br>
+        <label>
+            <h3>Deadline</h3>
+            <select>
+                <option value="" selected>Pick a Deadline</option>
+                <option value="3">Three Days </option>
+                <option value="7">One Week</option>
+                <option value="15">Two Weeks</option>
+                <option value="30">One Month</option>
+            </select><br>
+        </label>
+
+        <br>
+
+        <label>
+            <h3>Description</h3>
+            <textarea name="Description" rows="4" cols="50" placeholder="Describe your Job"></textarea>
+        </label>
+
+
+        <br>
+        <button>Find Me a Freelancer</button>
+    </form>
+    <nav>
+        <a href="../class HTML 09/recap.html">Back to Recap Page</a>
+    </nav>
+</body>
+
+</html>

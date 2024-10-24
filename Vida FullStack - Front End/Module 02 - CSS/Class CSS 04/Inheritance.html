@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Inheritance</title>
+    <style>
+        article {
+            font-size: 20px;
+            color: blue;
+        }
+
+        article section {
+            background-color: beige;
+        }
+
+        article section article p {
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+    <article>
+        <!-- Parent Element -->
+        Parent element, an article element that encompasses the rest
+        <section>
+            <!-- Child Element 1 -->
+            <p>First child element</p>
+
+            <article>
+                <!-- Grand Child Element 1 of Child Element 1 -->
+                <p>First grandchild element of the child 1</p>
+            </article>
+            <article>
+                <!-- Grand Child Element 2 of Child Element 1 -->
+                <p>Second grandchild element of the child 1</p>
+            </article>
+        </section>
+        <section>
+            <!-- Child Element 2 -->
+            <p>Second child element</p>
+            <article>
+                <!-- Grand Child Element 1 of Child Element 2 -->
+                <p>First grandchild element of the child 2</p>
+            </article>
+        </section>
+    </article>
+    <nav>
+        <a href="../Class CSS 17/recap.html">Back to Recap Page</a>
+    </nav>
+
+</body>
+
+</html>

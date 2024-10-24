@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Flexbox Recap</title>
+
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px;
+        }
+
+        header {
+            background: black;
+            border-radius: 12px;
+            padding: 1px;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 5px;
+            border: 2px solid red;
+        }
+
+        nav ul {
+            display: flex;
+            font-size: 25px;
+            list-style: none;
+
+        }
+
+
+        nav ul li {
+            margin: 30px 10px;
+            font-family: "Crimson Text";
+            color: white;
+            text-decoration: overline;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+        }
+
+        nav ul li a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+
+        nav ul li:hover {
+            text-decoration: line-through;
+            color: rgb(231, 0, 0);
+            text-shadow: 2px 2px 10px rgba(231, 0, 0, .7);
+            transform: scale(1.05)
+        }
+
+        .classlist {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-family: "Crimson Text";
+            text-transform: uppercase;
+            font-size: 22px;
+            letter-spacing: 5px;
+            align-self: center;
+            padding: 5px;
+            color: black;
+            text-decoration: overline;
+            transition: all 0.5s ease;
+        }
+
+        h1 a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        h1.link:hover {
+            text-decoration: line-through;
+            color: rgb(231, 0, 0);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+            transform: scale(1.05)
+        }
+
+        .list {
+            display: flex;
+            height: auto;
+            margin: 0px 20px;
+            height: auto;
+            gap: 10px;
+            padding: 5px;
+            background: rgba(0, 0, 0, .05);
+            border-radius: 5px;
+
+        }
+
+        .column {
+            flex: 1;
+
+        }
+
+        ol li {
+            margin: 7px 50px;
+            font-size: 14px;
+            font-family: "Crimson Text";
+            color: black;
+            text-decoration: overline;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+            flex-wrap: wrap;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 1px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 2px;
+            border-top-left-radius: 2px;
+            list-style: none;
+        }
+
+        ol li:hover {
+            text-decoration: line-through;
+            color: rgb(231, 0, 0);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+            transform: scale(1.05)
+        }
+
+        ol li a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+        .overview {
+            font-family: "Crimson Text";
+            text-transform: uppercase;
+            font-size: 22px;
+            letter-spacing: 5px;
+            align-self: center;
+            padding: 5px;
+            color: black;
+            text-decoration: none;
+            transition: all 0.5s ease;
+            margin: 10px 0px 0px 0px;
+        }
+
+        p {
+            font-family: "Crimson Text";
+            font-size: 14px;
+            margin: 5px 20px 0px 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, .3)
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 20px;
+        }
+
+        form {
+            font-family: "Crimson Text";
+            font-size: 14px;
+            margin: 5px 20px 0px 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, .3)
+        }
+
+        input {
+            font-size: 14px;
+            text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.2);
+            text-align: justify;
+        }
+
+        .button {
+            padding: 2px;
+            position: relative;
+            display: flex;
+            top: -40px;
+            left: 240px;
+        }
+
+        #jonredman {
+            width: 20vw;
+            font-size: 16px;
+            font-weight: 600;
+            align-self: right;
+            margin-top: 10px;
+        }
+
+        aside {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .pagenav {
+            margin: 7px 50px;
+            font-size: 14px;
+            font-family: "Crimson Text";
+            color: black;
+            text-decoration: overline;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+            flex-wrap: wrap;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 1px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 2px;
+            border-top-left-radius: 2px;
+            list-style: none;
+        }
+
+        .pagenav:hover {
+            text-decoration: line-through;
+            color: rgb(231, 0, 0);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+            transform: scale(1.05)
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="flex">
+        <header>
+            <nav>
+                <img src="./Maedbh Faoiltiarna.jpg" alt="">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Maedb">GitHub</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.reddit.com/user/DarkmoonHaze/">Reddit</a>
+                    </li>
+
+                    <li>
+                        <a href="https://steamcommunity.com/id/maedbh/">Steam</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:jonredmanq@gmail.com">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <a class="pagenav" href="../../Module 02 - CSS/Class CSS 17/recap.html">Previous Page - CSS
+                Recap</a><br>
+            <a class="pagenav" href="../../Module 04 - Exercise/Class Exercise 01/index.html">Next Page -
+                Hands On Exercise</a>
+        </aside> <br>
+        <div class="classlist">
+            <h1 class="link"><a href="https://youtu.be/P14IPrLxe6Q?si=1c3PkGWWBx3U3Iiz">Classes List</a></h1>
+        </div>
+        <div class="list">
+            <div class="column">
+                <ol>
+                    <li>
+                        <a href="../Class FlexBox 00/intro.html">01 - Intro</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 01/flex-direction.html">02 - Flex-Direction</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 02/flex-wrap.html">03 - Flex-Wrap</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 03/justify-content.html">04 - Justify-Content</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 04/align-itens.html">05 - Align-Items</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 05/align-content.html">06 - Align-Content</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 06/align-self.html">07 - Align-Self</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="column">
+                <ol>
+                    <li>
+                        <a href="../Class FlexBox 07/flex-grow.html">08 - Flex-Grow</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 08/flex-shrink.html">09 - Flex-Shrink</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 09/order.html">10 - Order</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 10/flex-basis.html">11 - Flex-Basis</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 11/flex.html">12 - Flex</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 12/menu.html">13 - Menu</a>
+                    </li>
+                    <li>
+                        <a href="../Class FlexBox 13/recapflexbox.html">14 - This Recap</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <br>
+        <hr>
+
+        <div class="classlist">
+            <h1 class="overview">Module Overview</h1>
+        </div>
+        <p>This module was simple and quick, a link with all the resources was provided beforehand, so it was just a
+            matter of reorganizing and annotating. Not much to work with in terms of customization of each class as I've
+            done before, as the model of this module was somewhat strict. The content was pretty simple, I only miss
+            some more practical application, as it was a very closed circuit (a graphic, with pre-determined
+            elements). Overall, it was more of a chill
+            module. <br><br>
+            Since the simpler and stricter nature of the classes, this recap will be made more simply, without really
+            going over each class. And there's nothing more fitting than building it on top of the original graphic used
+            on all classes.
+        </p>
+        <br>
+        <hr>
+        <p>Thanks for taking a look at my course progress page. If you're interested in seeing more
+            updates or a video with the entire journey, please select the following:</p>
+        <br>
+        <footer>
+            <form>
+                <label>
+                    <input type="checkbox" name="progress" value="Progress Pages">
+                    Progress Pages
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="progress" value="Video Journey">
+                    Video Journey
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="progress" value="Other">
+                    Other
+                </label>
+                <input type="text" name="otherText" placeholder="Please specify"><br><br>
+
+                <input class="button" type="submit" value="Submit">
+            </form>
+            <p ID="jonredman">Jon Redman - Maedbh, <br> October 15th, 2024</p>
+        </footer>
+
+    </main>
+
+
+</body>
+
+</html>

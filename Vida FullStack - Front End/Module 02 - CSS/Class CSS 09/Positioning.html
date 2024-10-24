@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Positioning</title>
+    <style>
+        .container {
+            background: wheat;
+            color: brown;
+            margin: 30px;
+            height: 500px
+        }
+
+        .child-relative {
+            background: brown;
+            color: wheat;
+            position: relative;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            left: 20px;
+
+            width: 300px
+        }
+
+        .child-absolute {
+            background: brown;
+            color: wheat;
+            position: absolute;
+
+            top: 70px;
+            right: 20px;
+        }
+
+        .fixed {
+            position: fixed;
+            right: 10px;
+            z-index: 999;
+            font-size: large;
+            background: brown;
+            padding: 10px;
+            bottom: 100px;
+            color: wheat;
+        }
+
+        .sticky {
+            position: sticky;
+            background: burlywood;
+            padding: 20px;
+            color: maroon;
+            z-index: 998;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed">
+        Fixed Text
+    </div>
+
+    <div class="sticky">
+        Sticky Text
+    </div>
+
+    <div class="container">
+        Text 1
+        <div class="child-relative">
+            Text relative
+        </div>
+        Text 3
+    </div>
+    <div class="container">
+        Text 1
+        <div class="child-absolute">
+            Text absolute
+        </div>
+        Text 3
+    </div>
+    <div class="container">
+        Text 1
+        <div class="child-relative">
+            Text relative
+        </div>
+        Text 3
+    </div>
+    <div class="container">
+        Text 1
+        <div class="child-absolute">
+            Text absolute
+        </div>
+        Text 3
+    </div>
+    <nav>
+        <a href="../Class CSS 17/recap.html">Back to Recap Page</a>
+    </nav>
+
+
+</body>
+
+</html>

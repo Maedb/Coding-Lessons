@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initialscale="1.0" />
+    <title>Responsivity</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom,
+                    rgb(87, 7, 87),
+                    purple,
+                    rgb(177, 25, 177),
+                    lightblue,
+                    blue,
+                    rgb(6, 6, 158),
+                    rgb(87, 7, 87));
+            background-size: 100% 900px;
+
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+
+        p {
+            display: none;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                background: blue
+            }
+        }
+
+        @media (max-width: 320px) {
+            body {
+                font-size: 50px;
+                background: purple;
+            }
+
+            p {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    Text for Responsivity
+
+    <p> P Text</p>
+
+    <nav>
+        <a href="../Class CSS 17/recap.html">Back to Recap Page</a>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Specificity</title>
+    <style>
+        /* 0.0.0.1 */
+
+        p {
+            background: brown;
+            color: wheat;
+            padding: 5px
+        }
+
+        /* 0.0.1.1 */
+
+        .new-color {
+            color: rgb(207, 250, 210);
+            font-weight: bold;
+        }
+
+        /* 0.1.1.1 */
+        #new-color-id-1 {
+            background: black;
+
+        }
+
+        /* 0.1.0.1 */
+        #new-color-id-2,
+        #new-color-id-3 {
+            background: rgb(0, 238, 255);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p>Text 1 - this has only the p tag, so it is 0.0.0.1</p>
+    <p class="new-color">Text 2 - this has a class added to it, so it is 0.0.1.1</p>
+    <p class="new-color">Text 3 - This has a class added to it, so it is 0.0.1.1</p>
+    <p id="new-color-id-1" class="new-color">Text 4 - This is set to an ID and also has a class, so it is 0.1.1.1</p>
+    <p id="new-color-id-2">Text 5 - This has only and ID attributed to it, so the priority is 0.1.0.1</p>
+    <!-- 1.1.1.1 -->
+    <p id="new-color-id-3" class="new-color" style="color:rgb(3, 3, 3); padding: 30px; background:rgb(251, 255, 5)">Text
+        6 - This is set to an ID and also has a class, but it has an inline too, so it is 1.1.1.1</p>
+    <!-- 1.0.0.1 -->
+    <p style="color:rgb(3, 3, 3); padding: 20px; background:rgb(5, 255, 26)">Text 7 - This is only set to an inline, so
+        it is 1.0.0.1</p>
+
+    <nav>
+        <a href="../Class CSS 17/recap.html">Back to Recap Page</a>
+    </nav>
+</body>
+
+</html>

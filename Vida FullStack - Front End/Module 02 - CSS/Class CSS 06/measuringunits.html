@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Measuring Units</title>
+    <style>
+        /* 
+        16px
+        1em => 16px, 2em => 32px (uses parent element)
+        1rem => 18px, 2rem => 36px (uses root element)
+        100% => 16px, 200% => 32px, 50% => 8px
+        */
+        html {
+            font-size: 12px;
+        }
+
+        div {
+            font-size: 2rem;
+        }
+
+        article:nth-child(3) {
+            font-size: 21px;
+        }
+
+        p {
+            font-size: 3em;
+        }
+
+        p:nth-child(2) {
+            font-size: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        Text with Root font size
+        <div>
+            Text with 2rem font size
+        </div>
+    </article>
+    <br>
+    <article>
+        Text with custom font size
+        <p>
+            Text with 3em font size
+        </p>
+        <p>
+            Text with 50% font size of the parent
+        </p>
+    </article>
+    <nav>
+        <a href="../Class CSS 17/recap.html">Back to Recap Page</a>
+    </nav>
+
+</body>
+
+</html>

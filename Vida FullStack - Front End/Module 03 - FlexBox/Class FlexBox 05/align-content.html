@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+  <title>Align Content</title>
+
+  <style>
+    .flex {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      align-content: space-evenly;
+      flex-direction: row-reverse;
+    }
+
+    .pagenav {
+      margin: 7px 50px;
+      font-size: 14px;
+      font-family: "Crimson Text";
+      color: black;
+      text-decoration: overline;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 1px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+      position: absolute;
+      bottom: 20px;
+    }
+
+    .pagenav:hover {
+      text-decoration: line-through;
+      color: rgb(231, 0, 0);
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+      transform: scale(1.05)
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="flex">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+    <div class="item">13</div>
+    <div class="item">14</div>
+    <div class="item">15</div>
+    <div class="item">16</div>
+    <div class="item">17</div>
+    <div class="item">18</div>
+    <div class="item">19</div>
+    <div class="item">20</div>
+    <div class="item">21</div>
+    <div class="item">22</div>
+    <div class="item">23</div>
+    <div class="item">24</div>
+    <div class="item">25</div>
+    <div class="item">26</div>
+    <div class="item">27</div>
+    <div class="item">28</div>
+    <div class="item">29</div>
+  </main>
+  <a class="pagenav" href="../Class FlexBox 13/recapflexbox.html">Back to recap page</a>
+</body>
+
+</html>

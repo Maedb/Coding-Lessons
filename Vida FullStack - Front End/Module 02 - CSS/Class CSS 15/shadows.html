@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Shadows</title>
+    <style>
+        div {
+            position: relative;
+            padding: 30px;
+            background: wheat;
+            font-size: 22px;
+            text-align: center;
+
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+
+
+            transition: all 0.5s;
+        }
+
+        div:hover {
+            bottom: 1px;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        Text with Shadow
+    </div>
+
+    <nav>
+        <a href="../Class CSS 17/recap.html">Back to Recap Page</a>
+    </nav>
+</body>
+
+</html>

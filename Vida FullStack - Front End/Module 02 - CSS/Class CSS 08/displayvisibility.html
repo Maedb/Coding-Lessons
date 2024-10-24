@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Display and Visibility</title>
+    <style>
+        html {
+            background: wheat
+        }
+
+        p {
+            color: brown
+        }
+
+        p.example1 {
+            display: block;
+        }
+
+        p.example2 {
+            display: inline;
+        }
+
+        p.example3 {
+            display: inline-block;
+        }
+
+        .appear:hover p.example4 {
+            display: block
+        }
+
+        p.example4 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="example1">Text Example 1</p>
+    <div>
+        Text Div
+        <p class="example2">Text Example 2</p>
+        Second Div Text
+    </div>
+    <div>
+        Text Div
+        <p class="example3">Text Example 3</p>
+        Second Div Text
+    </div>
+    <div class="appear">
+        Mouse over here to show example 4
+        <p class="example4">Text Example 4</p>
+    </div>
+    <nav>
+        <a href="../Class CSS 17/recap.html">Back to Recap Page</a>
+    </nav>
+</body>
+
+</html>
