@@ -1,0 +1,62 @@
+@media (min-width: 2200px) {
+    body {
+        background-size: 2000px;
+        background-color: $tertiary-colour;
+        background-position: left -1100px;
+    }
+}
+
+@media (max-width: 2200px) {
+    body {
+        background-size: 1000px;
+    }
+}
+
+@media (max-width: 1920px) {
+    body {
+        background-size: 980px;
+    }
+}
+
+@media (max-width: 1700px) {
+    body {
+        background-size: 880px;
+    }
+}
+
+@media (max-width: 1550px) {
+    body {
+        background-size: 800px;
+    }
+}
+
+@media (max-width: 1440px) {
+    body {
+        background-size: 750px;
+    }
+}
+
+@media (max-width: 1330px) {
+    body {
+        background-size: 700px;
+    }
+}
+
+@media (max-width: 1220px) {
+    body {
+        background-size: 650px;
+    }
+}
+
+@media (max-width: 1110px) {
+    body {
+        background-position-x: -70px;
+    }
+}
+
+@media (max-width: 915px) {
+    body {
+        background-position: left -200px;
+        background-color: $tertiary-colour
+    }
+}

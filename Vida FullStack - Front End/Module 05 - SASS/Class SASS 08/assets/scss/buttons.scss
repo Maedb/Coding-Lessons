@@ -1,0 +1,26 @@
+@mixin button-style($btn-background-colour, $btn-text-colour) {
+    padding: 10px 30px;
+    border-radius: $btn-radius;
+    display: inline-block;
+    background: $btn-background-colour;
+    color: $btn-text-colour;
+
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+.btn {
+
+    &.orange {
+        @include button-style($accent-colour, $white-colour)
+    }
+
+    &.marine {
+        @include button-style($secondary-colour, $white-colour)
+    }
+
+}

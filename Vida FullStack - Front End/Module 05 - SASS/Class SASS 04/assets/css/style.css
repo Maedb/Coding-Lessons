@@ -1,0 +1,26 @@
+.btn, .btn-yellow, .btn-purple, .btn-orange {
+  width: 200px;
+  padding: 10px 0;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  margin: 10px 0;
+}
+
+.btn-orange {
+  background: orange;
+  color: #ffffff;
+}
+
+.btn-purple {
+  background: purple;
+  color: #ffffff;
+}
+
+.btn-yellow {
+  background: yellow;
+  color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */

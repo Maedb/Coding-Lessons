@@ -1,0 +1,32 @@
+.btn {
+  width: 200px;
+  padding: 10px 0;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  margin: 10px 0;
+}
+.btn.orange {
+  background: orange;
+  color: #ffffff;
+}
+.btn.orange:hover {
+  background: rgb(229.5, 148.5, 0);
+}
+.btn.purple {
+  background: purple;
+  color: #ffffff;
+}
+.btn.purple:hover {
+  background: rgb(102.5, 0, 102.5);
+}
+.btn.yellow {
+  background: yellow;
+  color: #000000;
+}
+.btn.yellow:hover {
+  background: rgb(229.5, 229.5, 0);
+}
+
+/*# sourceMappingURL=style.css.map */

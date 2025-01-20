@@ -1,0 +1,54 @@
+header {
+
+    section {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        li {
+            transition: all 0.1s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            a {
+                margin: 0px 15px;
+                color: $primary-colour;
+            }
+        }
+    }
+
+}
+
+.course {
+    width: 1024px;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    display: flex;
+    color: $primary-colour;
+    align-items: center;
+
+    li:hover {
+        transform: scale(1.02);
+    }
+}
+
+.profile {
+    width: 120px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: $secondary-colour;
+    border-width: 3px;
+
+    transition: all 0.5s;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}

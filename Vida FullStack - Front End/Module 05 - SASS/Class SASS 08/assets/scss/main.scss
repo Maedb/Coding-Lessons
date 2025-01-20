@@ -1,0 +1,48 @@
+.about-web-design {
+    justify-content: space-between;
+    align-items: center;
+
+    article {
+        width: 300px;
+
+        h1 {
+            font-size: $font-h1;
+            line-height: 90%;
+            font-weight: 500;
+            color: $secondary-colour;
+        }
+
+        h2,
+        p,
+        ul li a {
+            color: $primary-colour;
+        }
+
+        h2 {
+            font-size: $font-h2;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 200%;
+
+        }
+
+        p {
+            margin: 10px 0 10px;
+
+        }
+
+        ul li {
+
+            transition: all 0.1s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+    }
+
+    figure img {
+        width: 650px;
+    }
+}

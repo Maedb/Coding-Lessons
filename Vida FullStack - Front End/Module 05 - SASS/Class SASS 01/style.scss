@@ -1,0 +1,13 @@
+p {
+    span {
+        background: red;
+    }
+
+    b {
+        background: blue;
+    }
+
+    &:hover {
+        color: green;
+    }
+}

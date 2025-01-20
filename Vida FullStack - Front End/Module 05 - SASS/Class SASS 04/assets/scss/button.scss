@@ -1,0 +1,29 @@
+.btn {
+    width: 200px;
+    padding: 10px 0;
+    background: none;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    margin: 10px 0;
+}
+
+@mixin button-style($background, $color) {
+    background: $background;
+    color: $color;
+}
+
+.btn-orange {
+    @extend .btn;
+    @include button-style($color-orange, #ffffff)
+}
+
+.btn-purple {
+    @extend .btn;
+    @include button-style($color-purple, #ffffff)
+}
+
+.btn-yellow {
+    @extend .btn;
+    @include button-style($color-yellow, #000000)
+}

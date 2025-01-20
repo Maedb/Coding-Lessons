@@ -1,0 +1,25 @@
+footer ul {
+    align-items: center;
+    margin: 0px 30px;
+
+    li {
+        margin: 0 20px 0 0;
+    }
+}
+
+
+.socials {
+    width: $social-icons;
+
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+#jonredman {
+    margin: 20px auto 0;
+    text-align: center;
+    color: $secondary-colour;
+}
